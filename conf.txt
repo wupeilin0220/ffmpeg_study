@@ -1,0 +1,22 @@
+{
+	"MediaInfo": {
+		"previewRatio":0.5,
+		"videoBits": 250,
+		"audioSample": 16000,
+		"audioChannel": 2,
+		"audioBits": 32,
+		"streamChannelExp":10000,
+		"preset":"ultrafast"
+	},
+	"RtmpServer": {
+		"host": [
+			"192.168.2.34"
+			],
+		"section": "Preview",
+		"rtmpPort":1935,
+		"httpPort":80
+	},
+	"FlvVisit":"http",
+	"PreviewFile":false,
+	"CachePath":"/opt/NetMsgListener"
+}

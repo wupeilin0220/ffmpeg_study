@@ -1,0 +1,27 @@
+MediaBase		链接器（数据传输）
+DataStruct      数据结构
+TaskApply		数据管理类（一个class外加union）
+TaskBroadcast	任务请求处理解析
+NetStreamListen	网络流状态监听服务
+JsonConf.h		项目配置解析类
+conf.txt		配置文件
+
+
+ResourceCreater 文件下载
+
+Decoder			解码基类
+DecoderFile		文件解码
+DecoderNet		网络流解码
+PictureStream   图片/图片集推流
+
+
+filter			滤镜基类
+split			将输入源复制出一份（一份用来预览，一份用来推流到输出）
+DrawText		字幕滤镜
+logoFilter		水印滤镜
+TimeMark		时钟滤镜
+Mosaic			马赛克（自己编写，未继承filter）
+FadeFilter		淡入淡出滤镜（半成品）
+
+
+

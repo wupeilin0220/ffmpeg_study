@@ -1,0 +1,234 @@
+Program Compiled 18:20:02  Feb  5 2020
+file size 396
+read from {
+	"MediaInfo": {
+		"previewRatio":0.5,
+		"videoBits": 250,
+		"audioSample": 16000,
+		"audioChannel": 2,
+		"audioBits": 32,
+		"streamChannelExp":10000,
+		"preset":"ultrafast"
+	},
+	"RtmpServer": {
+		"host": [
+			"192.168.2.34"
+			],
+		"section": "Preview",
+		"rtmpPort":1935,
+		"httpPort":80
+	},
+	"FlvVisit":"http",
+	"PreviewFile":false,
+	"CachePath":"/opt/NetMsgListener"
+}
+
+dir /opt
+dir /opt/NetMsgListener
+fifo_1.ini
+fifo /tmp/fifo_1
+fifo /tmp/fifo_2
+fifo /tmp/fifo_3
+create fifo successs
+
+act read_______________462
+2-6 9:25:17 deal json in_____________________________
+{
+    "pipeResponse": "/tmp/pipe_response_1",
+    "instanceID": "5d367e99eabca2000880e1af",
+    "data": {
+        "windowID": 1,
+        "type": 0,
+        "name": "2121",
+        "speciaEeffect": 1,
+        "inputUrl": "rtmp://58.200.131.2:1935/livetv/gdtv"
+    },
+    "userID": "5d2aa63a05a9b441e0d16905",
+    "messageType": "addStream",
+    "requestID": "50E7C861897F4FF4AC22412BC09A989B",
+    "taskType": "preview",
+    "pipeRequest": "/tmp/pipe_request_1"
+}
+task size 1 ParseTask.....................
+322
+check url rtmp://58.200.131.2:1935/livetv/gdtv
+input url rtmp://58.200.131.2:1935/livetv/gdtv
+rtmp://58.200.131.2:1935/livetv/gdtvsource has video width 1024 height 576
+rtmp://58.200.131.2:1935/livetv/gdtv source has audio sample 8 channel 1
+split height 288width 512
+split src hasviceo 1 hasAudio 1
+split______________________ [vin0]split=[a][voutSp];[a]scale=512:288,format=pix_fmts=yuv420p[vout0]
+AudioResample args [ain0]aformat=sample_fmts=fltp:channel_layouts=stereo:sample_rates=16000,volume=volume=2.000000[aout0]input source time base1000
+rtmp://192.168.2.34:1935/Preview1/Stream-1080133821
+http://192.168.2.34:80/Preview1/Stream-1080133821.flv
+[libx264 @ 0x7f6abc07cc40] using cpu capabilities: none!
+[libx264 @ 0x7f6abc07cc40] profile Constrained Baseline, level 2.1, 4:2:0, 8-bit
+[libx264 @ 0x7f6abc07cc40] 264 - core 157 - H.264/MPEG-4 AVC codec - Copyleft 2003-2019 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=0:0:0 analyse=0:0 me=dia subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=4 lookahead_threads=4 sliced_threads=1 slices=4 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=25 keyint_min=4 scenecut=0 intra_refresh=0 rc=abr mbtree=0 bitrate=256 ratetol=1.0 qcomp=0.50 qpmin=10 qpmax=37 qpstep=4 ip_ratio=1.40 aq=0
+Encoder::Video init
+Encoder::Audio init
+DecoderNet::exec start run..............
+Export destruct
+response task over
+ParseTask Over.....................
+time use 
+10115.4 write_________________________________________
+ 535 data: {"pipeResponse":"/tmp/pipe_response_1","instanceID":"5d367e99eabca2000880e1af","pipeRequest":"/tmp/pipe_request_1","userID":"5d2aa63a05a9b441e0d16905","messageType":"addStream","requestID":"50E7C861897F4FF4AC22412BC09A989B","taskType":"preview","data":{"previewUrl":"rtmp://192.168.2.34:1935/Preview1/Stream-1080133821","httpUrl":"http://192.168.2.34:80/Preview1/Stream-1080133821.flv","windowID":1,"executeId":"17B1F195-EF57-4E02-B7227065D850933D","hasVideo":true,"hasAudio":true,"type":2,"status":1},"code":1000,"message":""}
+video stream input start 1.92909e+06
+ time base 1000 1stream offset video pts 1.92909e+06
+audio stream input start 1.92909e+06stream offset audio pts 1.92909e+06
+second pts 40
+first pack out time_______________________________ 1580952328147976
+get signal 
+
+		__________start push_________
+
+rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580952328148588 tT 10120001 vT first 10120000 aT first 0
+get time 1580952328148621
+[flv @ 0x7f6abc07b3c0] Packets are not in the proper order with respect to DTS
+av_interleaved_write_frame err -22
+[flv @ 0x7f6abc07b3c0] Packets are not in the proper order with respect to DTS
+av_interleaved_write_frame err -22
+system 120s frame video pts 120035
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580952448149053 tT 130120466 video time 130120000 audio time129859000
+system 120s frame video pts 240115
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580952568149054 tT 250120467 video time 250120000 audio time249923000
+system 120s frame video pts 359995
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580952688149055 tT 370120467 video time 370040000 audio time369923000
+system 120s frame video pts 480035
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580952808149056 tT 490120468 video time 490040000 audio time489923000
+system 120s frame video pts 600075
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580952928149057 tT 610120469 video time 610040000 audio time609923000
+system 120s frame video pts 720115
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580953048149058 tT 730120471 video time 730040000 audio time729923000
+system 120s frame video pts 840115
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580953168149059 tT 850120472 video time 850040000 audio time849923000
+system 120s frame video pts 959995
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580953288149060 tT 970120473 video time 969880000 audio time969923000
+system 120s frame video pts 1079715
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580953408149061 tT 1090120474 video time 1090120000 audio time1089923000
+system 120s frame video pts 1200315
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580953528188647 tT 1210160060 video time 1210160000 audio time1209923000
+system 120s frame video pts 1320315
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580953648188648 tT 1330160061 video time 1329920000 audio time1329923000
+system 120s frame video pts 1440355
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580953768188678 tT 1450160091 video time 1450160000 audio time1449923000
+system 120s frame video pts 1560355
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580953888188963 tT 1570160375 video time 1570160000 audio time1569923000
+system 120s frame video pts 1680395
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580954008188964 tT 1690160377 video time 1690160000 audio time1689923000
+system 120s frame video pts 1800395
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580954128188965 tT 1810160377 video time 1810160000 audio time1809923000
+system 120s frame video pts 1920155
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580954248188966 tT 1930160378 video time 1929920000 audio time1929923000
+system 120s frame video pts 2040195
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580954368188967 tT 2050160380 video time 2049920000 audio time2049923000
+system 120s frame video pts 2160195
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580954488188968 tT 2170160381 video time 2169920000 audio time2169923000
+system 120s frame video pts 2280195
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580954608188969 tT 2290160381 video time 2289920000 audio time2289987000
+system 120s frame video pts 2400195
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580954728188970 tT 2410160383 video time 2409920000 audio time2409923000
+system 120s frame video pts 2520235
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580954848188971 tT 2530160383 video time 2529920000 audio time2529923000
+system 120s frame video pts 2640275
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580954968188972 tT 2650160384 video time 2649920000 audio time2649923000
+system 120s frame video pts 2760555
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580955088188973 tT 2770160386 video time 2770160000 audio time2769923000
+system 120s frame video pts 2880555
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580955208188974 tT 2890160387 video time 2890160000 audio time2889923000
+system 120s frame video pts 3000595
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580955328188975 tT 3010160387 video time 3010160000 audio time3009923000
+system 120s frame video pts 3120595
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580955448188976 tT 3130160389 video time 3130120000 audio time3129923000
+system 120s frame video pts 3240635
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580955568188977 tT 3250160390 video time 3250160000 audio time3249923000
+system 120s frame video pts 3360675
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580955688188978 tT 3370160391 video time 3370160000 audio time3369923000
+system 120s frame video pts 3480715
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580955808188979 tT 3490160392 video time 3490160000 audio time3489923000
+system 120s frame video pts 3600715
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580955928188985 tT 3610160392 video time 3610160000 audio time3609923000
+system 120s frame video pts 3720755
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580956048188986 tT 3730160399 video time 3730160000 audio time3729923000
+system 120s frame video pts 3840755
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580956168188987 tT 3850160399 video time 3850160000 audio time3849923000
+system 120s frame video pts 3960795
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580956288188988 tT 3970160401 video time 3970160000 audio time3969923000
+system 120s frame video pts 4080835
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580956408188989 tT 4090160402 video time 4090160000 audio time4089923000
+system 120s frame video pts 4200835
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580956528188990 tT 4210160403 video time 4210160000 audio time4209923000
+system 120s frame video pts 4320875
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580956648188991 tT 4330160404 video time 4330160000 audio time4329923000
+system 120s frame video pts 4440915
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580956768188992 tT 4450160404 video time 4450160000 audio time4449923000
+system 120s frame video pts 4560675
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580956888188993 tT 4570160405 video time 4569920000 audio time4569923000
+system 120s frame video pts 4680675
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580957008188994 tT 4690160407 video time 4689920000 audio time4689923000
+system 120s frame video pts 4800675
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580957128188995 tT 4810160408 video time 4809920000 audio time4809923000
+system 120s frame video pts 4920955
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580957248188996 tT 4930160409 video time 4930160000 audio time4929923000
+system 120s frame video pts 5040995
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580957368188997 tT 5050160409 video time 5050160000 audio time5049923000
+system 120s frame video pts 5160995
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580957488188998 tT 5170160411 video time 5170160000 audio time5169923000
+system 120s frame video pts 5281035
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580957608188999 tT 5290160412 video time 5290160000 audio time5289923000
+system 120s frame video pts 5401075
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580957728189000 tT 5410160412 video time 5410160000 audio time5409923000
+system 120s frame video pts 5521115
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580957848189001 tT 5530160413 video time 5530160000 audio time5529923000
+system 120s frame video pts 5641155
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580957968189002 tT 5650160415 video time 5650160000 audio time5649923000
+system 120s frame video pts 5761155
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580958088189003 tT 5770160415 video time 5770160000 audio time5769923000
+system 120s frame video pts 5881195
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580958208189004 tT 5890160417 video time 5890160000 audio time5889923000
+system 120s frame video pts 6001195
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580958328189005 tT 6010160418 video time 6010160000 audio time6009923000
+system 120s frame video pts 6121195
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580958448189006 tT 6130160418 video time 6130160000 audio time6129923000
+system 120s frame video pts 6241235
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580958568189007 tT 6250160420 video time 6250160000 audio time6249923000
+system 120s frame video pts 6361275
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580958688189008 tT 6370160420 video time 6370160000 audio time6369923000
+system 120s frame video pts 6481435
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580958808189009 tT 6490160422 video time 6490160000 audio time6489923000
+system 120s frame video pts 6601475
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580958928189010 tT 6610160423 video time 6610160000 audio time6609923000
+system 120s frame video pts 6721475
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580959048189011 tT 6730160424 video time 6730160000 audio time6729923000
+system 120s frame video pts 6841435
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580959168189012 tT 6850160425 video time 6850120000 audio time6849923000
+system 120s frame video pts 6961475
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580959288189013 tT 6970160426 video time 6970120000 audio time6969987000
+system 120s frame video pts 7081475
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580959408189014 tT 7090160427 video time 7090120000 audio time7089923000
+system 120s frame video pts 7201475
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580959528189015 tT 7210160428 video time 7210120000 audio time7209923000
+system 120s frame video pts 7321515
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580959648189016 tT 7330160428 video time 7330120000 audio time7329987000
+system 120s frame video pts 7441555
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580959768189017 tT 7450160429 video time 7450120000 audio time7449987000
+system 120s frame video pts 7561555
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580959888189018 tT 7570160430 video time 7570120000 audio time7569987000
+system 120s frame video pts 7681595
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580960008189019 tT 7690160432 video time 7690120000 audio time7689987000
+system 120s frame video pts 7801635
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580960128189020 tT 7810160433 video time 7810080000 audio time7809923000
+system 120s frame video pts 7921755
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580960248189021 tT 7930160434 video time 7930160000 audio time7929923000
+system 120s frame video pts 8041795
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580960368189120 tT 8050160533 video time 8050160000 audio time8049923000
+system 120s frame video pts 8161795
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580960488189121 tT 8170160534 video time 8170160000 audio time8169923000
+system 120s frame video pts 8281595
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580960608189122 tT 8290160534 video time 8290000000 audio time8289987000
+system 120s frame video pts 8401635
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580960728189123 tT 8410160535 video time 8409960000 audio time8409923000
+system 120s frame video pts 8521635
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580960848189124 tT 8530160537 video time 8530000000 audio time8529923000
+system 120s frame video pts 8641635
+pushUrl rtmp://192.168.2.34:1935/Preview1/Stream-1080133821 now 1580960968189125 tT 8650160538 video time 8650000000 audio time8649987000
